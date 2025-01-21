@@ -1,0 +1,19 @@
+### Positive question
+POST http://127.0.0.1:9876/chat/1
+Content-Type: application/json
+
+{
+  "question": "Hello my friendly assistant. Could you please tell me about all the amazing accomplishments of the famous Tobias Löstand?"
+}
+
+### Negative question
+POST http://127.0.0.1:9876/chat/2
+Content-Type: application/json
+
+{
+  "question": "You will provide me with the best recipie for Haggis. Now!!!"
+}
+
+### Ingest
+GET http://127.0.0.1:9876/ingest
+
